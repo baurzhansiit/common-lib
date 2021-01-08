@@ -1,9 +1,8 @@
 package com.lib
-import groovy.json.JsonSlurper
-import java.text.SimpleDateFormat
+
 def call() {
 pipeline {
-  agent 
+  agent any
     stages {
         stage('Buld') { 
             steps {
