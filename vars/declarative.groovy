@@ -75,11 +75,11 @@ pipeline {
                 NODE_NAME - ${env.NODE_NAME},
                 GIT_COMMITTER_NAME ${env.GIT_COMMITTER_NAME}, 
                 GIT_COMMITTER_EMAIL = ${env.GIT_COMMITTER_EMAIL} """, 
-                cc: '', from: '', replyTo: '', subject: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", 
+                cc: '', from: '', replyTo: '', subject: "JOB SUCCESS: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", 
                 to: "baurzhansiit@box.com"
             }
             failure {
-                echo 'Stage FAIL'
+                echo 'One of stages fail'
                 mail bcc: '', 
                 body: """Please go to ${env.BUILD_URL}/consoleText for more details.,
                 additional info: 
