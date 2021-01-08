@@ -1,7 +1,7 @@
 package com.lib
 def call() {
 pipeline {
-  agent any
+  agent 
     stages {
         stage('Buld') { 
             steps {
