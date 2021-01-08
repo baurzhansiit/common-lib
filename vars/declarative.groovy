@@ -76,7 +76,7 @@ pipeline {
                 GIT_COMMITTER_NAME ${env.GIT_COMMITTER_NAME}, 
                 GIT_COMMITTER_EMAIL = ${env.GIT_COMMITTER_EMAIL} """, 
                 cc: '', from: '', replyTo: '', subject: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", 
-                to: "my@box.com"
+                to: "mmy@box.com"
             }
             failure {
                 echo 'Stage FAIL'
@@ -87,7 +87,7 @@ pipeline {
                 GIT_COMMITTER_NAME ${env.GIT_COMMITTER_NAME}, 
                 GIT_COMMITTER_EMAIL = ${env.GIT_COMMITTER_EMAIL} """, 
                 cc: '', from: '', replyTo: '', subject: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'", 
-                to: "my@box.com"
+                to: "mmy@box.com"
             }
         }
     }
